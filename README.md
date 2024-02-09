@@ -28,5 +28,4 @@ This project leverages the following technologies:
 - JavaScript
 
 Feel free to explore and modify the code to suit your specific requirements.  
-
-#### Appreciate your interest in the AUTOCERTIFY - Automatic Certificate Generator. Happy certifying!
+Appreciate your interest in the AUTOCERTIFY - Automatic Certificate Generator. Happy certifying!
