@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autocertify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="Assets/logo.png" class="logo" >
+    <ul>
+      <li class="homep"><a href="homenew.html">Home</a></li>
+      <li><a href="About.html">about</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+      <li><a href="sign.html">Login</a></li>
+    </ul>
+  </div>
+  <section>
+    <h1>PRIMER</h1>
+</section>
+<section>
+  <div class="container reveal">
+    <h2>Prologue</h2>
+    <div class="cards">
+      <div class="text-card">
+        <h3 class="Prologue"></h3>
+        <p class="instruct1"> We know what it's like to need the help of a specialist, and we know how frustrating it is when they're not available when you need them most. That's why we created Autocertify—to remove the hassle of manual certificate generation and automate the process through a website with different templates and easy to use interface.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="firstpart"></div>
+<section>
+  <div class="container reveal">
+    <div class="cards">
+      <div class="text-card">
+        <p class="mission">mission</p>
+        <p class="instruct2"> Our mission is to provide an online platform that allows businesses, individuals, or organizations to create their own certificates. Our goal is to help everyone save time and money by creating their own certificates by using our online tools and templates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="secondpart"></div>
+<section>
+  <div class="container reveal">
+    <div class="cards">
+      <div class="text-card">
+        <p class="mission">objective</p>
+        <p class="instruct2">Autocertify serves the needs of people who need certificates for their business, school and personal use. Our team is dedicated to providing you with the highest quality service with all the tools and features you need at your fingertips. Our objective is to make your experience with us as easy and pleasant as possible, so you can focus on what matters most: your business!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="features">
+  <div class="design">design
+    <p class="description">Upload your own design or select one from our pre-designed templates and customize it to your needs.</p>
+  </div>
+  <div class="generate">generate
+    <p  class="description">Effortlessly add the attributes you require, while enjoying the freedom to adapt and customize as per your requirements.</p>
+  </div>
+  <div class="export">export
+    <p  class="description">Verify your eligibility with ease and conveniently export it in your preferred format, such as PDF, PNG, or JPEG.</p>
+  </div>
+</div>
+
+<div class="footing">
+  <img class="logofoot" src="Assets/logo.png" alt="">
+  <div class="firstbox">
+    <p class="logoname">Autocertify</p>
+    <p class="logodet0">Design, Issue and <br> Export Certificates </p>
+  </div>
+  <div class="geerate">
+    <p class="usecase1">Use cases</p>
+    <p class="logodet1">Certificates for school <br> Certificates for courses</p>
+  </div>
+  <div class="geerate">
+    <p class="usecase">Resources</p>
+    <p class="logodet">Certificate Templates </p>
+  </div>
+  <div class="geerate">
+    <p class="usecase">Members</p>
+    <p class="logodet">Adithya krishnan  <br> Deva Nandh<br> Hariprasad <br>Devaprasad</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.addEventListener('scroll',reveal);
+
+  function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i=0;i<reveals.length;i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    
+  } 
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>verify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="verify.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="Assets/logo.png" class="logo" >
+    <ul>
+      <li class="homep"><a href="homenew.html">Home</a></li>
+      <li><a href="About.html">about</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+        <li><a href="sign.html">Login</a></li>
+    </ul>
+  </div>
+  <div class="wholetable"></div>
+  <div class="reqsend">send a request e-mail to the creator for participants details</div>
+  <div class="csvtable"> <input type="file" id="csvFileInput" accept=".csv"></div>
+  <div class="searchbar"><input type="text" id="searchInput" placeholder="Search by name"></div>
+  <div id="tableContainer"></div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js"></script>
+  <script>
+    let csvData = [];
+
+    // CSV file input handling
+    document.getElementById('csvFileInput').addEventListener('change', handleFileSelect, false);
+
+    function handleFileSelect(event) {
+      const file = event.target.files[0];
+
+      Papa.parse(file, {
+        complete: function(results) {
+          csvData = results.data;
+          generateTable(csvData);
+        }
+      });
+    }
+
+    // Table generation
+    function generateTable(data) {
+      const tableContainer = document.getElementById('tableContainer');
+      tableContainer.innerHTML = '';
+
+      const table = document.createElement('table');
+      const tableBody = document.createElement('tbody');
+
+      data.forEach(function(rowData) {
+        const row = document.createElement('tr');
+
+        rowData.forEach(function(cellData) {
+          const cell = document.createElement('td');
+          cell.appendChild(document.createTextNode(cellData));
+          row.appendChild(cell);
+        });
+
+        tableBody.appendChild(row);
+      });
+
+      table.appendChild(tableBody);
+      tableContainer.appendChild(table);
+
+      // Add event listener for search input
+      const searchInput = document.getElementById('searchInput');
+      searchInput.addEventListener('input', function() {
+        filterTable(searchInput.value.toLowerCase());
+      });
+    }
+
+    // Filter table rows based on search input
+    function filterTable(searchValue) {
+      const tableRows = document.querySelectorAll('#tableContainer table tbody tr');
+
+      tableRows.forEach(function(row) {
+        const rowData = row.innerText.toLowerCase();
+
+        if (rowData.includes(searchValue)) {
+          row.style.display = 'table-row';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+  
+  </script>
+</body>
+</html>

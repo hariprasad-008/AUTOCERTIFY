@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Autocertify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="master.css">
+    <script>
+      function checkInput() {
+        var userName = document.getElementById('inputText').value;
+        var userPass = document.getElementById('userPass').value;
+        if (userName.toLowerCase() === 'user') {
+          if(userPass.toLowerCase() === 'password') {
+            window.location.href = 'Certificate-Generator/index.html';
+          }
+          else{
+            window.location.href = 'sign.html';
+            alert("Wrong password");
+          }
+        }
+        else {
+          console.log("check else")
+          
+          window.location.href = 'sign.html';
+          alert("Wrong username");
+        }
+      }
+    </script>
+  </head>
+  <body >
+    
+    <div class="banner">
+    
+  <div class="navbar">
+    <img src="Assets/logo.png" class="logo" >
+    <ul>
+      <li class="homep"><a href="homenew.html">Home</a></li>
+      <li><a href="About.html">about</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+      <li><a href="sign.html">Login</a></li>
+    </ul>
+  </div>
+      <div class="out">
+        <div class="loginbox">
+          <h1>Login </h1>
+            <p>Username</p>
+            <input type="text" name="inputText" placeholder="Enter Username" id="inputText">
+            <p>Password</p>
+            <input type="password" name="userPass" id="userPass" placeholder="Enter password">
+            <button class="Btn" onclick="checkInput()">Submit</button>
+
+        </div>
+      </div>
+        </div>
+     
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  
+</html>

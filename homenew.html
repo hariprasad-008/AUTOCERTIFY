@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Autocertify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Paytone+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homenew.css">
+    <link rel="stylesheet" href="master.css">
+    
+  </head>
+  <body >
+    <div class="gradient">
+    <video autoplay muted loop id="myVideo">
+      <source src="Assets/Comp 1.mp4" type="video/mp4">
+    </video>
+    <div class="banner">
+      <div class="sidebar">
+        <img class="twitter"src="Assets/twitter2.png" alt="">
+        <img class="insta"src="Assets/insta2.png" alt="">
+      </div>
+      <div class="navbar">
+        <img src="Assets/logo.png" class="logo" >
+        <ul>
+          <li class="homep"><a href="homenew.html">Home</a></li>
+          <li><a href="About.html">about</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+            <li><a href="sign.html">Login</a></li>
+        </ul>
+      </div>
+      <p class="middle">AUTOCERTIFY</p>
+      <div class="content">
+        <div class="topside">
+          <div>
+           <a href="verify.html">
+            <img class="icon revealIcon" src="Assets/icon2.png" alt="">
+           </a> 
+          </div>
+          <div class="themes">VERIFY</div>
+        </div>
+      </div>
+      
+      <div class="tagdiv">
+        <p class="tagline1">The go-to destination for creating and issuing 
+          high-quality e-certificates</p>
+        <p class="tagline">When it comes to obtaining e-certificates, there is no better place to turn to than our platform, which has established itself as the go-to destination for individuals and organizations alike who are seeking a reliable, secure, and efficient means of acquiring these important documents electronically.</p>
+
+        <a href="sign.html">
+          <button class="startbutton"> Get started</button></a>
+      </div>
+      <div class="secdiv">
+        <div>
+          <p class="divider-lefttop">Create, Customize, Certify: Your One-Stop Shop for Professional Credentials.</p>
+          <p class="divider-left">Autocertify lets you generate multiple certificates at once, which can be downloaded in many formats. Our certificate sender lets you eliminate human error and tedious manual work by sending your credentials via email in just a few clicks. </p></div>
+        <img class="divider reveal" src="Assets/divider.png" alt="">
+       <div>
+        <p class="divider-right1">Why do you need a certificate maker?</p>
+         <p class="divider-right">Without a certificate maker, creating and issuing credentials will be time-consuming and tedious. A certificate maker can speed up this process. It’ll allow you to quickly and easily create professionally-looking certificates without design skills and mass-generate them in a few clicks.</p>
+       </div>
+      </div>
+      
+    </div>
+    <div class="ending">
+      <img class="certicon" src="Assets/certificateicon.png" alt="">
+      <p class="endauto">Autocertify</p>
+      <p class="endescip">Empowering Excellence: Design, Generate, Export Certificates</p> 
+    </div>
+    <div class="footer">
+      <p class="mail">- For more information visit other pages -</p>
+    </div>
+  </div>
+ 
+
+  <script type="text/javascript">
+    window.addEventListener('scroll',reveal);
+  
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+  
+        for(var i=0;i<reveals.length;i++){
+  
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+  
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      
+    }  
+    </script>
+  </body>
+  
+</html>

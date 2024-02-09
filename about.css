@@ -1,0 +1,263 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+ 
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  top: 0px;
+  padding: 35px 0;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+ 
+}
+.logo{
+  width: 155px;
+  cursor: pointer;
+  margin-left:572px;
+  margin-top: 40px;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+}
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 4px;
+  width: 0;
+  background:#7e7a7a;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s;
+}
+.homep li ::after{
+  content: '';
+  height: 4px;
+  width: 20;
+  background:#7e7a7a;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+
+}
+.navbar ul li:hover:after{
+width: 100%;
+}
+
+body{
+ background: black;
+}
+
+section{
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(1){
+  color: antiquewhite;
+  
+}
+
+section:nth-child(2){
+  color: antiquewhite;
+}
+section:nth-child(3){
+  color: antiquewhite;
+}
+
+section.container{
+  margin: 100px;
+}
+section h1{
+  font-size: 60px;
+}
+
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.cards{
+  display: flex;
+}
+
+section .cards .text-card{
+background: rgba(12, 5, 5, 0.437);
+margin: 20px;
+padding: 20px;
+margin-top: 50px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.Prologue{
+ 
+ margin-bottom: 10px;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+.instruct1{
+  color: #ffffffe0;
+  width: 800px;
+  font-size: large;
+  text-align: center;
+}
+.instruct2{
+  color: #ffffffe0;
+  width: 800px;
+  font-size: large;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.firstpart{
+  height: 1px;
+  background-color: white;
+  width: 400px;
+  margin-left: 36%;
+  border-radius: 20px;
+}
+.secondpart{
+  height: 1px;
+  background-color: white;
+  width: 200px;
+  margin-left: 43%;
+  border-radius: 20px;
+}
+
+.mission{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.design,.generate,.export{
+  width: 300px;
+  height: 320px;
+  border-top: 3px solid rgb(0, 0, 0);
+  margin: 25px;
+  padding: 5px;
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 3px;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 140px;
+}
+
+.features{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  height: 500px;
+  background-color: white;
+  font-weight: 700;
+}
+
+.description{
+  font-size: 15px;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.782);
+  font-weight: 600;
+}
+
+.footing{
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 50px;
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+.logodet{
+  font-size: 15px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 120px;
+}
+.logodet0{
+  font-size: 15px;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.779);
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 5px;
+  
+}
+.logoname{
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding-top: 43px;
+}
+.usecase{
+  padding-left: 120px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 55px;
+}
+
+.firstbox{
+  padding-left: 0;
+}
+.usecase1{
+  padding-left: 150px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 55px;
+}
+.logodet1{
+  font-size: 15px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 150px;
+}
+
+.footing{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 280px;
+}
+.logofoot{
+  width: 5%;
+  height: 20%;
+  margin-top: 47px;
+  margin-left: 10px;
+}
