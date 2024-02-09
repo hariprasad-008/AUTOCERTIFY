@@ -10,16 +10,16 @@ Welcome to AUTOCERTIFY - Automatic Certificate Generator repository! This projec
 
 ## Features
 ### Admin Login  
-Securely log in to the system to access and manage your certificates. Authentication ensures that only authorized individuals can use the generator.
+- Securely log in to the system to access and manage your certificates. Authentication ensures that only authorized individuals can use the generator.
 
 ### Generate Bulk Certificates by Uploading CSV File 
-Efficiently create multiple certificates by uploading a CSV file containing participant details. The generator will automatically populate the certificates with the specified information.
+- Efficiently create multiple certificates by uploading a CSV file containing participant details. The generator will automatically populate the certificates with the specified information.
 
 ### Edit Certificates
-Make adjustments or corrections to certificates as needed. The editing feature allows you to update information without the need to recreate certificates from scratch.
+- Make adjustments or corrections to certificates as needed. The editing feature allows you to update information without the need to recreate certificates from scratch.
 
 ### Verify Certificates
-Enable participants and third parties to verify the authenticity of certificates. The verification process ensures the legitimacy of each certificate issued through the system.
+- Enable participants and third parties to verify the authenticity of certificates. The verification process ensures the legitimacy of each certificate issued through the system.
 
 ## Technologies Used
 This project leverages the following technologies:
